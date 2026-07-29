@@ -18,13 +18,15 @@ const outfit = Outfit({
 
 const SITE_URL = 'https://coldop.in';
 
+const GOOGLE_VERIFICATION = 'google123456789abcdefghijklmnop';
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   icons: {
     icon: '/favicon.svg',
   },
    verification: {
-    google: 'google123456789abcdefghijklmnop',
+    google: GOOGLE_VERIFICATION,
   },
   title: {
     default: 'Coldop — Cold Storage Management Software',
