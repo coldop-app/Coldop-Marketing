@@ -22,6 +22,7 @@ function ClientChip({
             alt={client.name}
             width={448}
             height={160}
+            sizes="(min-width: 640px) 16rem, 14rem"
             className="max-h-16 max-w-[14rem] object-contain mix-blend-multiply sm:max-h-20 sm:max-w-[16rem] dark:mix-blend-screen"
             style={{ width: 'auto', height: 'auto' }}
           />
@@ -40,13 +41,14 @@ function ClientChip({
           alt=""
           width={24}
           height={24}
+          sizes="24px"
           className="size-6 object-contain"
         />
       ) : (
         <Warehouse className="text-primary size-4 shrink-0" aria-hidden />
       )}
       <div className="flex flex-col gap-0.5">
-        <span className="text-sm font-semibold leading-tight">{client.name}</span>
+        <span className="text-sm leading-tight font-semibold">{client.name}</span>
         {client.address ? (
           <span className="text-muted-foreground text-xs leading-tight">{client.address}</span>
         ) : null}

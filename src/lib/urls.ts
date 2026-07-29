@@ -5,6 +5,7 @@ export const SITE_URL = 'https://coldop.in';
 export const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? 'https://app.coldop.in';
 
 export const APP_LOGIN_URL = `${APP_URL}/login`;
+export const BOOK_DEMO_URL = process.env.NEXT_PUBLIC_CAL_BOOK_DEMO_URL ?? 'https://cal.com';
 
 export const CONTACT = {
   email: 'support@coldop.in',

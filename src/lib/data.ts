@@ -92,7 +92,7 @@ export const GATE_PASSES = [
 ];
 
 export const STATS = [
-  { value: 1000000, format: 'lakh', label: 'Bags Managed Across Commodities' },
+  { value: 1000000, format: 'lakh', label: 'Potato Bags Managed' },
   { value: 5000, format: 'k', label: 'Receipts Created' },
   { value: 50, format: 'plus', label: 'Chambers Digitized' },
   { value: 99.9, format: 'percent', label: 'Preservation Accuracy' },

@@ -1,22 +1,12 @@
-import {
-  ArrowRight,
-  CheckCircle2,
-  Play,
-  ShieldCheck,
-} from 'lucide-react';
+import { ArrowRight, CheckCircle2, ShieldCheck } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { APP_LOGIN_URL } from '@/lib/urls';
+import { APP_LOGIN_URL, BOOK_DEMO_URL } from '@/lib/urls';
 import { GatePassTicker } from '@/components/landing/GatePassTicker';
 
 export function Hero() {
-  const accountCta = (
-    <Button render={<a href={APP_LOGIN_URL} />} nativeButton={false} size="lg">
-      Access Account <ArrowRight data-icon="inline-end" />
-    </Button>
-  );
-
   return (
     <section id="home" className="relative scroll-mt-24 overflow-hidden">
+      {/* Background ornaments */}
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
         <div className="bg-primary/10 absolute -top-32 -left-32 size-[480px] rounded-full blur-[120px]" />
         <div className="bg-chart-3/10 absolute -right-40 bottom-0 size-[420px] rounded-full blur-[120px]" />
@@ -31,6 +21,7 @@ export function Hero() {
 
       <div className="mx-auto flex min-h-[calc(100svh-4rem)] max-w-7xl items-center px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
         <div className="grid w-full grid-cols-1 items-center gap-14 lg:grid-cols-12">
+          {/* Copy */}
           <div className="flex flex-col items-center justify-center gap-6 text-center lg:col-span-6 lg:items-start lg:self-center lg:text-left">
             <span
               data-anim="hero-item"
@@ -51,10 +42,10 @@ export function Hero() {
               className="border-primary bg-primary/5 max-w-lg rounded-r-lg border-l-2 px-4 py-2.5 text-left"
             >
               <p className="text-sm font-semibold">
-                Built for daily cold storage operations with fast, accurate execution.
+                ਪੰਜਾਬ ਦੇ ਆਲੂ ਉਤਪਾਦਕਾਂ ਅਤੇ ਕੋਲਡ ਸਟੋਰਾਂ ਲਈ ਸਭ ਤੋਂ ਭਰੋਸੇਮੰਦ ਸਾਫਟਵੇਅਰ।
               </p>
               <p className="text-muted-foreground mt-0.5 text-xs">
-                Supports multiple commodities in one system with live stock visibility.
+                The most trusted digital ledger &amp; real-time telemetry for potato storages.
               </p>
             </div>
 
@@ -70,14 +61,16 @@ export function Hero() {
               data-anim="hero-item"
               className="flex flex-wrap items-center justify-center gap-3 lg:justify-start"
             >
-              {accountCta}
+              <Button render={<a href={APP_LOGIN_URL} />} nativeButton={false} size="lg">
+                Access Account <ArrowRight data-icon="inline-end" />
+              </Button>
               <Button
-                render={<a href="#in-the-field" />}
+                render={<a href={BOOK_DEMO_URL} target="_blank" rel="noopener noreferrer" />}
                 nativeButton={false}
                 variant="outline"
                 size="lg"
               >
-                <Play data-icon="inline-start" /> Watch Operation Reels
+                Book a Demo <ArrowRight data-icon="inline-end" />
               </Button>
             </div>
 
@@ -94,6 +87,7 @@ export function Hero() {
             </div>
           </div>
 
+          {/* Product visual */}
           <div className="flex justify-center lg:col-span-6 lg:self-center">
             <div data-anim="hero-visual" className="relative w-full max-w-[540px]">
               <div
@@ -102,6 +96,7 @@ export function Hero() {
               />
 
               <div className="bg-card rounded-2xl border shadow-xl">
+                {/* Console header */}
                 <div className="flex items-center justify-between border-b px-5 py-3.5">
                   <span className="text-muted-foreground flex items-center gap-2 font-mono text-xs font-semibold tracking-wider">
                     <span className="relative flex size-2">

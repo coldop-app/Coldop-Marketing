@@ -1,6 +1,6 @@
 import { ArrowRight, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { APP_LOGIN_URL, CONTACT } from '@/lib/urls';
+import { BOOK_DEMO_URL, CONTACT } from '@/lib/urls';
 
 export function CtaBand() {
   return (
@@ -25,12 +25,12 @@ export function CtaBand() {
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
               <Button
-                render={<a href={APP_LOGIN_URL} />}
+                render={<a href={BOOK_DEMO_URL} target="_blank" rel="noopener noreferrer" />}
                 nativeButton={false}
                 size="lg"
                 variant="secondary"
               >
-                Access Account <ArrowRight data-icon="inline-end" />
+                Book a Demo <ArrowRight data-icon="inline-end" />
               </Button>
               <Button
                 render={<a href={CONTACT.phoneHref} />}

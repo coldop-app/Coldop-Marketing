@@ -12,8 +12,8 @@ export function Footer() {
           <div className="space-y-4">
             <BrandMark />
             <p className="text-muted-foreground max-w-60 text-xs leading-relaxed">
-              Cold storage software built for modern warehouse operations. From gate pass to chamber
-              stock — one system that keeps the floor running without paper.
+              Made in India for cold storage operators. From gate pass to chamber stock — one system
+              that keeps the floor running without paper.
             </p>
           </div>
 
@@ -43,12 +43,12 @@ export function Footer() {
                   rel="noreferrer"
                   className="text-muted-foreground hover:text-foreground inline-flex items-center gap-1 transition-colors"
                 >
-                  Coldop Story Video <ExternalLink className="size-3" />
+                  ColdOp Story Video <ExternalLink className="size-3" />
                 </a>
               </li>
               <li>
                 <a
-                  href="https://www.instagram.com/reel/DRrlfr1CfB5/"
+                  href={CONTACT.instagramReel}
                   target="_blank"
                   rel="noreferrer"
                   className="text-muted-foreground hover:text-foreground inline-flex items-center gap-1 transition-colors"
@@ -77,7 +77,7 @@ export function Footer() {
         </div>
 
         <div className="text-muted-foreground mt-12 flex flex-wrap items-center justify-between gap-4 border-t pt-8 text-xs">
-          <p>© {new Date().getFullYear()} Coldop.in — All rights reserved. Estd. 2023.</p>
+          <p>© {new Date().getFullYear()} ColdOp.in — All rights reserved. Estd. 2023.</p>
           <div className="flex items-center gap-4">
             <Link href="/privacy" className="hover:text-foreground transition-colors">
               Privacy Policy
