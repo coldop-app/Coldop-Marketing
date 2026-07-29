@@ -1,5 +1,7 @@
+import Link from 'next/link';
 import { ExternalLink, Mail, Phone } from 'lucide-react';
 import { NAV_LINKS } from '@/lib/data';
+import { CONTACT } from '@/lib/urls';
 import { BrandMark } from './BrandMark';
 
 export function Footer() {
@@ -10,8 +12,8 @@ export function Footer() {
           <div className="space-y-4">
             <BrandMark />
             <p className="text-muted-foreground max-w-60 text-xs leading-relaxed">
-              Made in India for cold storage operators. From gate pass to chamber stock — one system
-              that keeps the floor running without paper.
+              Cold storage software built for modern warehouse operations. From gate pass to chamber
+              stock — one system that keeps the floor running without paper.
             </p>
           </div>
 
@@ -36,12 +38,12 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  href="https://www.youtube.com/watch?v=aCQ3rb-K_m0"
+                  href={CONTACT.youtubeStory}
                   target="_blank"
                   rel="noreferrer"
                   className="text-muted-foreground hover:text-foreground inline-flex items-center gap-1 transition-colors"
                 >
-                  ColdOp Story Video <ExternalLink className="size-3" />
+                  Coldop Story Video <ExternalLink className="size-3" />
                 </a>
               </li>
               <li>
@@ -75,10 +77,15 @@ export function Footer() {
         </div>
 
         <div className="text-muted-foreground mt-12 flex flex-wrap items-center justify-between gap-4 border-t pt-8 text-xs">
-          <p>© {new Date().getFullYear()} ColdOp.in — All rights reserved. Estd. 2023.</p>
-          <p className="text-muted-foreground">
-            Privacy Policy and Terms of Service pages coming soon.
-          </p>
+          <p>© {new Date().getFullYear()} Coldop.in — All rights reserved. Estd. 2023.</p>
+          <div className="flex items-center gap-4">
+            <Link href="/privacy" className="hover:text-foreground transition-colors">
+              Privacy Policy
+            </Link>
+            <Link href="/terms" className="hover:text-foreground transition-colors">
+              Terms of Service
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

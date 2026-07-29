@@ -203,20 +203,24 @@
  * Initial reveal state via CSS (not gsap.set) so SSR HTML and the hydrated
  * tree match. GSAP only animates to the visible state after mount/scroll.
  * Dynamic Suspense islands (ChamberMap, InTheField) hydrate safely.
+ *
+ * Scoped to `.js` (set by an inline script in the root layout) so that
+ * without JavaScript — no-JS users, HTML-only crawlers, failed bundles —
+ * every section stays fully visible instead of stuck at opacity 0.
  */
 @media (prefers-reduced-motion: no-preference) {
-  [data-reveal]:not([data-revealed]) {
+  .js [data-reveal]:not([data-revealed]) {
     opacity: 0;
     transform: translate3d(0, 28px, 0);
   }
 
-  [data-reveal-group] > *:not([data-revealed]) {
+  .js [data-reveal-group] > *:not([data-revealed]) {
     opacity: 0;
     transform: translate3d(0, 24px, 0);
   }
 
   /* Revealed flag lives on the grid so dynamic children (chamber floors) stay visible after swap. */
-  [data-cells]:not([data-revealed]) > * {
+  .js [data-cells]:not([data-revealed]) > * {
     opacity: 0;
     transform: scale(0.92);
   }

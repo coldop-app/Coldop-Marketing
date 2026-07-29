@@ -1,11 +1,11 @@
 "use client";
 
 import { useRef, useState } from 'react';
-import Link from 'next/link';
 import gsap from 'gsap';
 import { ArrowUpRight, CheckCircle2, Layers } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { DEMO_CHAMBERS, type DemoFloor } from '@/lib/data';
+import { APP_LOGIN_URL } from '@/lib/urls';
 import {
   formatBags,
   formatUtilization,
@@ -230,7 +230,7 @@ export function ChamberMap() {
 
                 <div className="border-t pt-5">
                   <Button
-                    render={<Link href="/login" />}
+                    render={<a href={APP_LOGIN_URL} />}
                     nativeButton={false}
                     className="w-full"
                   >

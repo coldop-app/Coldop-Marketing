@@ -1,0 +1,30 @@
+# Coldop
+
+> Coldop is a cold storage management and inventory software for Indian
+> operators — gate passes, chamber-wise stock, farmer ledgers, daybook, and
+> PDF/Excel reports in one system. Built in Punjab for the warehouse floor,
+> with a bilingual English–Punjabi interface. Estd. 2023.
+
+## What Coldop does
+- Gate pass management: incoming and outgoing passes created at the gate
+- Chamber stock: live inventory by chamber, floor, and row
+- Farmer ledgers: per-farmer balances, gate-pass history, printable ledgers
+- Stock transfers between farmer accounts without rewriting books
+- Occupancy analytics: capacity utilization, variety and size mix, top farmers
+- Reports: vouchers, ledgers, Incoming/Outgoing/Transfer in PDF and Excel
+- No hardware required; works on any phone, tablet, or desktop
+
+## Who uses it
+50+ chambers digitized across Punjab cold storages, including Raghav Cold
+Storage (Brahmpur), Satnam Cold Storage (Madhojhanda), Kartarpur Cold Storage
+(Kartarpur), and Bolina Farms (Karari). 10 lakh+ potato bags managed and
+5,000+ receipts created (as of July 2026).
+
+## Key pages
+- Home: https://coldop.in
+- Privacy: https://coldop.in/privacy
+- Terms: https://coldop.in/terms
+- App sign-in: https://app.coldop.in/login
+
+## Contact
+support@coldop.in · +91 98770 69258 · https://coldop.in

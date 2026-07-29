@@ -1,25 +1,16 @@
-import Link from 'next/link';
 import {
   ArrowRight,
-  ArrowUpRight,
   CheckCircle2,
   Play,
   ShieldCheck,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { APP_LOGIN_URL } from '@/lib/urls';
 import { GatePassTicker } from '@/components/landing/GatePassTicker';
 
-interface HeroProps {
-  isLoggedIn?: boolean;
-}
-
-export function Hero({ isLoggedIn = false }: HeroProps) {
-  const accountCta = isLoggedIn ? (
-    <Button render={<Link href="/daybook" />} nativeButton={false} size="lg">
-      Go to Dashboard <ArrowUpRight data-icon="inline-end" />
-    </Button>
-  ) : (
-    <Button render={<Link href="/login" />} nativeButton={false} size="lg">
+export function Hero() {
+  const accountCta = (
+    <Button render={<a href={APP_LOGIN_URL} />} nativeButton={false} size="lg">
       Access Account <ArrowRight data-icon="inline-end" />
     </Button>
   );
@@ -60,10 +51,10 @@ export function Hero({ isLoggedIn = false }: HeroProps) {
               className="border-primary bg-primary/5 max-w-lg rounded-r-lg border-l-2 px-4 py-2.5 text-left"
             >
               <p className="text-sm font-semibold">
-                ਪੰਜਾਬ ਦੇ ਆਲੂ ਉਤਪਾਦਕਾਂ ਅਤੇ ਕੋਲਡ ਸਟੋਰਾਂ ਲਈ ਸਭ ਤੋਂ ਭਰੋਸੇਮੰਦ ਸਾਫਟਵੇਅਰ।
+                Built for daily cold storage operations with fast, accurate execution.
               </p>
               <p className="text-muted-foreground mt-0.5 text-xs">
-                The most trusted digital ledger &amp; real-time telemetry for potato storages.
+                Supports multiple commodities in one system with live stock visibility.
               </p>
             </div>
 

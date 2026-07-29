@@ -1,17 +1,13 @@
 'use client';
 
-import Link from 'next/link';
 import { useTheme } from 'next-themes';
-import { ArrowRight, ArrowUpRight, Moon, Sun } from 'lucide-react';
+import { ArrowRight, Moon, Sun } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { NAV_LINKS } from '@/lib/data';
+import { APP_LOGIN_URL } from '@/lib/urls';
 import { BrandMark } from '@/components/landing/BrandMark';
 
-interface NavbarProps {
-  isLoggedIn?: boolean;
-}
-
-export function Navbar({ isLoggedIn = false }: NavbarProps) {
+export function Navbar() {
   const { resolvedTheme, setTheme } = useTheme();
 
   return (
@@ -46,15 +42,9 @@ export function Navbar({ isLoggedIn = false }: NavbarProps) {
             <Moon className="absolute size-4 scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" />
           </Button>
 
-          {isLoggedIn ? (
-            <Button render={<Link href="/daybook" />} nativeButton={false}>
-              Dashboard <ArrowUpRight data-icon="inline-end" />
-            </Button>
-          ) : (
-            <Button render={<Link href="/login" />} nativeButton={false}>
-              Sign In <ArrowRight data-icon="inline-end" />
-            </Button>
-          )}
+          <Button render={<a href={APP_LOGIN_URL} />} nativeButton={false}>
+            Sign In <ArrowRight data-icon="inline-end" />
+          </Button>
         </div>
       </div>
     </header>

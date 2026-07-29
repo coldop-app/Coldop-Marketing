@@ -10,7 +10,7 @@ export function InTheField() {
           icon={MessageSquare}
           eyebrow="Live Action Proof"
           title="Coldop in the field"
-          sub="Real gate operations and potato inventories being logged across Punjab."
+          sub="Real gate operations and commodity inventories being logged in real time."
         />
 
         <div data-reveal-group className="mt-14 grid grid-cols-1 items-start gap-8 md:grid-cols-12">
@@ -19,7 +19,7 @@ export function InTheField() {
               <div className="aspect-video relative w-full overflow-hidden rounded-lg bg-black">
                 <iframe
                   src="https://www.youtube.com/embed/aCQ3rb-K_m0"
-                  title="From Registers to Real-Time: The ColdOp Story"
+                  title="From Registers to Real-Time: The Coldop Story"
                   className="absolute inset-0 h-full w-full border-0"
                   loading="lazy"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -29,7 +29,7 @@ export function InTheField() {
             </div>
             <div className="space-y-1 px-2">
               <h3 className="text-lg font-semibold">
-                From Registers to Real-Time: The ColdOp Story
+                From Registers to Real-Time: The Coldop Story
               </h3>
               <p className="text-muted-foreground text-sm text-pretty">
                 How traditional cold storages ran operations before and after adopting the Coldop

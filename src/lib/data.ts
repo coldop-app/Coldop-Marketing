@@ -92,7 +92,7 @@ export const GATE_PASSES = [
 ];
 
 export const STATS = [
-  { value: 1000000, format: 'lakh', label: 'Potato Bags Managed' },
+  { value: 1000000, format: 'lakh', label: 'Bags Managed Across Commodities' },
   { value: 5000, format: 'k', label: 'Receipts Created' },
   { value: 50, format: 'plus', label: 'Chambers Digitized' },
   { value: 99.9, format: 'percent', label: 'Preservation Accuracy' },
@@ -192,4 +192,51 @@ export const NAV_LINKS = [
   { label: 'Chamber Map', id: 'chamber-map' },
   { label: 'Features', id: 'features' },
   { label: 'In the Field', id: 'in-the-field' },
+  { label: 'FAQ', id: 'faq' },
 ];
+
+/**
+ * One quotable sentence that fully answers "What is Coldop?" — rendered
+ * verbatim on the page and in structured data so search and answer engines
+ * can lift it directly.
+ */
+export const COLDOP_DEFINITION =
+  'Coldop is a cold storage software platform for managing gate passes, chamber-wise stock, farmer ledgers, and reports across multiple commodities without paper registers.';
+
+/**
+ * Rendered as the visible FAQ section AND emitted as FAQPage JSON-LD.
+ * Keep both in sync by editing only this list — schema that doesn't match
+ * visible content gets ignored (or penalized) by search engines.
+ */
+export const FAQ_ITEMS = [
+  {
+    question: 'What is Coldop?',
+    answer:
+      'Coldop is a cold storage software platform that manages gate passes, chamber-wise stock, farmer ledgers, daybook operations, and PDF/Excel reports in one system — replacing paper registers end to end.',
+  },
+  {
+    question: 'How much does cold storage software cost?',
+    answer:
+      'Pricing depends on the number of chambers and storage capacity. Coldop offers custom per-storage pricing with onboarding included, and setup takes about a day. Contact support@coldop.in or call +91 98770 69258 for a quote.',
+  },
+  {
+    question: 'Does Coldop need special hardware to run?',
+    answer:
+      'No. Coldop is fully browser-based and works on any phone, tablet, or desktop. There are no servers, sensors, or hardware installations required — you can run your cold storage from anywhere.',
+  },
+  {
+    question: 'Does Coldop support multiple commodities?',
+    answer:
+      'Yes. Coldop supports operations across multiple commodities stored in cold storage, including potato, fruits, vegetables, dairy products, and spices. You can track inventory, movement, and ledger history by chamber, floor, and row for each commodity.',
+  },
+  {
+    question: 'Can Coldop replace my manual cold storage registers?',
+    answer:
+      'Yes. One gate entry in Coldop automatically updates receipts, chamber stock maps, farmer account ledgers, and the daybook. Incoming, Outgoing, and Transfer reports export to PDF and Excel, so the books stay complete without hand-copied rows.',
+  },
+  {
+    question: 'How does Coldop track inventory inside the cold storage?',
+    answer:
+      'Stock is tracked live by chamber, floor, and row, with capacity utilization, variety and size mix, and top-farmer views. Every bag traces back to its gate pass, lot number, and farmer account.',
+  },
+] as const;

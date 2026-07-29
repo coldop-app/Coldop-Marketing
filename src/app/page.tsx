@@ -6,8 +6,10 @@ import { Clients } from '@/components/landing/Clients';
 import { Stats } from '@/components/landing/Stats';
 import { HowItWorks } from '@/components/landing/HowItWorks';
 import { Features } from '@/components/landing/Features';
+import { Faq } from '@/components/landing/Faq';
 import { CtaBand } from '@/components/landing/CtaBand';
 import { Footer } from '@/components/landing/Footer';
+import { StructuredData } from '@/components/landing/StructuredData';
 
 const ChamberMap = dynamic(
   () => import('@/components/landing/ChamberMap').then((m) => m.ChamberMap),
@@ -53,9 +55,11 @@ export default function LandingPage() {
         <ChamberMap />
         <Features />
         <InTheField />
+        <Faq />
         <CtaBand />
       </main>
       <Footer />
+      <StructuredData />
     </LandingAnimations>
   );
 }
