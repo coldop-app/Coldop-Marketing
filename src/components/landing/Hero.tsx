@@ -45,7 +45,7 @@ export function Hero() {
                 ਪੰਜਾਬ ਦੇ ਆਲੂ ਉਤਪਾਦਕਾਂ ਅਤੇ ਕੋਲਡ ਸਟੋਰਾਂ ਲਈ ਸਭ ਤੋਂ ਭਰੋਸੇਮੰਦ ਸਾਫਟਵੇਅਰ।
               </p>
               <p className="text-muted-foreground mt-0.5 text-xs">
-                The most trusted digital ledger &amp; real-time telemetry for potato storages.
+                The most trusted digital ledger &amp; real-time telemetry for cold storages.
               </p>
             </div>
 

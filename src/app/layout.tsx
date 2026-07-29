@@ -23,6 +23,9 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.svg',
   },
+   verification: {
+    google: 'google123456789abcdefghijklmnop',
+  },
   title: {
     default: 'Coldop — Cold Storage Management Software',
     template: '%s | Coldop',
