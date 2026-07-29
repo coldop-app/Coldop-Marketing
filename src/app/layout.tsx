@@ -18,7 +18,9 @@ const outfit = Outfit({
 
 const SITE_URL = 'https://coldop.in';
 
-const GOOGLE_VERIFICATION = 'google123456789abcdefghijklmnop';
+<meta name="google-site-verification" content="" />
+
+const GOOGLE_VERIFICATION = 'NGnHHg9XTTPDYBQEVyz8Jn0xzA7s566QoGyU1PJSeHM';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
