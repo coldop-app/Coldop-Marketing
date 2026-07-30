@@ -18,16 +18,20 @@ const outfit = Outfit({
 
 const SITE_URL = 'https://coldop.in';
 
-<meta name="google-site-verification" content="" />
-
 const GOOGLE_VERIFICATION = 'NGnHHg9XTTPDYBQEVyz8Jn0xzA7s566QoGyU1PJSeHM';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   icons: {
-    icon: '/favicon.svg',
+    icon: [
+      { url: '/favicon.ico', sizes: '48x48' },
+      { url: '/icon-48x48.png', type: 'image/png', sizes: '48x48' },
+      { url: '/icon-96x96.png', type: 'image/png', sizes: '96x96' },
+      { url: '/icon-192x192.png', type: 'image/png', sizes: '192x192' },
+    ],
+    apple: [{ url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }],
   },
-   verification: {
+  verification: {
     google: GOOGLE_VERIFICATION,
   },
   title: {
@@ -36,7 +40,7 @@ export const metadata: Metadata = {
   },
   description:
     'Coldop is complete cold storage software for gate passes, chamber-wise stock, farmer ledgers, daybook, and PDF/Excel reports in one system. Built for warehouse-floor operations across multiple commodities.',
- keywords: [
+  keywords: [
     // Core Product Terms
     'cold storage management software',
     'cold storage software',

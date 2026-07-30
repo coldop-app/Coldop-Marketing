@@ -15,7 +15,7 @@ const jsonLd = {
       name: 'Coldop',
       legalName: 'Coldop',
       url: SITE_URL,
-      logo: `${SITE_URL}/icon.png`,
+      logo: `${SITE_URL}/logo.png`,
       email: CONTACT.email,
       telephone: '+91-98770-69258',
       foundingDate: '2023',
