@@ -25,11 +25,9 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: '48x48' },
-      { url: '/icon-48x48.png', type: 'image/png', sizes: '48x48' },
-      { url: '/icon-96x96.png', type: 'image/png', sizes: '96x96' },
-      { url: '/icon-192x192.png', type: 'image/png', sizes: '192x192' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
     ],
-    apple: [{ url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }],
+    apple: '/apple-icon.png',
   },
   verification: {
     google: GOOGLE_VERIFICATION,
@@ -40,43 +38,6 @@ export const metadata: Metadata = {
   },
   description:
     'Coldop is complete cold storage software for gate passes, chamber-wise stock, farmer ledgers, daybook, and PDF/Excel reports in one system. Built for warehouse-floor operations across multiple commodities.',
-  keywords: [
-    // Core Product Terms
-    'cold storage management software',
-    'cold storage software',
-    'cloud based cold storage software',
-    'cold storage app',
-    'cold storage ERP',
-    'cold storage billing software',
-
-    // Inventory & Warehouse Specifics
-    'inventory software',
-    'cold storage inventory management',
-    'warehouse management system',
-    'WMS for cold storage',
-    'multi commodity cold storage software',
-    'chamber stock software',
-    'chamber wise stock management',
-    'rack wise stock management',
-
-    // Operational Features
-    'gate pass software',
-    'inward outward stock software',
-    'farmer stock ledger',
-    'daybook software',
-    'cold storage accounting software',
-    'inventory tracking system',
-
-    // Industry & Niche
-    'agricultural supply chain software',
-    'agri-business ERP',
-    'cold chain management software',
-    'warehouse-floor operations software',
-
-    // Regional/Local (Based on en_IN locale)
-    'cold storage software India',
-    'best cold storage software'
-  ],
   applicationName: 'Coldop',
   authors: [{ name: 'Coldop', url: SITE_URL }],
   creator: 'Coldop',
@@ -89,12 +50,19 @@ export const metadata: Metadata = {
     title: 'Coldop — Cold Storage Management Software',
     description:
       'Gate passes, chamber-wise stock, farmer ledgers, daybook, and reports in one system for multiple commodities. No hardware required.',
+    images: [
+      {
+        url: '/opengraph-image.png',
+        alt: 'Coldop — cold storage management software: gate passes, chamber stock, farmer ledgers, and reports in one system.',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Coldop — Cold Storage Management Software',
     description:
       'Gate passes, chamber-wise stock, farmer ledgers, daybook, and reports in one system for multiple commodities. No hardware required.',
+    images: ['/opengraph-image.png'],
   },
   robots: {
     index: true,
