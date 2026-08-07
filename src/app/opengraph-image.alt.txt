@@ -1,0 +1,1 @@
+Coldop — cold storage management software: gate passes, chamber stock, farmer ledgers, and reports in one system.

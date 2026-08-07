@@ -22,13 +22,6 @@ const GOOGLE_VERIFICATION = 'NGnHHg9XTTPDYBQEVyz8Jn0xzA7s566QoGyU1PJSeHM';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  icons: {
-    icon: [
-      { url: '/favicon.ico', sizes: '48x48' },
-      { url: '/favicon.svg', type: 'image/svg+xml' },
-    ],
-    apple: '/apple-icon.png',
-  },
   verification: {
     google: GOOGLE_VERIFICATION,
   },
@@ -50,19 +43,12 @@ export const metadata: Metadata = {
     title: 'Coldop — Cold Storage Management Software',
     description:
       'Gate passes, chamber-wise stock, farmer ledgers, daybook, and reports in one system for multiple commodities. No hardware required.',
-    images: [
-      {
-        url: '/opengraph-image.png',
-        alt: 'Coldop — cold storage management software: gate passes, chamber stock, farmer ledgers, and reports in one system.',
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Coldop — Cold Storage Management Software',
     description:
       'Gate passes, chamber-wise stock, farmer ledgers, daybook, and reports in one system for multiple commodities. No hardware required.',
-    images: ['/opengraph-image.png'],
   },
   robots: {
     index: true,
