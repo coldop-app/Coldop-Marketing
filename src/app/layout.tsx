@@ -3,6 +3,7 @@ import { Inter, Outfit } from 'next/font/google';
 import { GoogleTagManager } from '@next/third-parties/google';
 import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
+import { THEME_HYDRATE_SCRIPT } from '@/lib/theme-persistence';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -82,9 +83,17 @@ export default function RootLayout({
     >
       {gtmId ? <GoogleTagManager gtmId={gtmId} /> : null}
       <body className="flex min-h-full flex-col">
+        {/* Shared coldop-theme cookie → localStorage + dark class before paint */}
+        <script dangerouslySetInnerHTML={{ __html: THEME_HYDRATE_SCRIPT }} />
         {/* Reveal animations are gated behind this class so content stays visible without JS (crawlers, no-JS users). */}
         <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+          storageKey="theme"
+        >
           {children}
         </ThemeProvider>
       </body>
