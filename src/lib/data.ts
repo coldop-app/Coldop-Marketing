@@ -107,6 +107,10 @@ export const ENTERPRISE_PARTNERS = [
     name: "Kapur Farms",
     logo: "https://res.cloudinary.com/dakh64xhy/image/upload/v1783787856/Screenshot_2026-07-11_at_10.07.28_PM_dfofqs.png",
   },
+   {
+    name: "Shri Ram Farms",
+    logo: "https://res.cloudinary.com/dakh64xhy/image/upload/v1790586930/srf-logo_fm4d7g.jpg",
+  },
 ] as const;
 
 export const BASE_OPERATORS = [
