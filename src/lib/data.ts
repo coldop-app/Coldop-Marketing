@@ -136,6 +136,7 @@ export const BASE_OPERATORS = [
   { name: "Hazara Cold Storage", address: "Hazara", logo: "" },
   { name: "Armaan Cold Storage", address: "Kamalpur", logo: "" },
   { name: "Khalsa Cold Storage", address: "Maniala", logo: "" },
+    { name: "New Thind Cold Storage", address: "Loharan", logo: "" },
 ] as const;
 
 export const STEPS = [
