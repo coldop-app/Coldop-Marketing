@@ -92,9 +92,9 @@ export const GATE_PASSES = [
 ];
 
 export const STATS = [
-  { value: 1000000, format: "lakh", label: "Potato Bags Managed" },
-  { value: 5000, format: "k", label: "Receipts Created" },
-  { value: 50, format: "plus", label: "Chambers Digitized" },
+  { value: 1500000, format: "lakh", label: "Potato Bags Managed" },
+  { value: 10000, format: "k", label: "Receipts Created" },
+  { value: 100, format: "plus", label: "Chambers Digitized" },
   { value: 99.9, format: "percent", label: "Preservation Accuracy" },
 ] as const;
 
@@ -136,7 +136,7 @@ export const BASE_OPERATORS = [
   { name: "Hazara Cold Storage", address: "Hazara", logo: "" },
   { name: "Armaan Cold Storage", address: "Kamalpur", logo: "" },
   { name: "Khalsa Cold Storage", address: "Maniala", logo: "" },
-    { name: "New Thind Cold Storage", address: "Loharan", logo: "" },
+  { name: "New Thind Cold Storage", address: "Loharan", logo: "" },
 ] as const;
 
 export const STEPS = [
