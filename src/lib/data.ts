@@ -137,6 +137,7 @@ export const BASE_OPERATORS = [
   { name: "Armaan Cold Storage", address: "Kamalpur", logo: "" },
   { name: "Khalsa Cold Storage", address: "Maniala", logo: "" },
   { name: "New Thind Cold Storage", address: "Loharan", logo: "" },
+   { name: "Sandhu Agri Farms", address: "V.P.O Uggi", logo: "https://res.cloudinary.com/dakh64xhy/image/upload/v1791516252/WhatsApp_Image_2026-10-08_at_16.43.54_trehag.jpg" },
 ] as const;
 
 export const STEPS = [
